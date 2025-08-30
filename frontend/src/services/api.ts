@@ -13,7 +13,7 @@ import {
 
 // Create axios instance
 const api = axios.create({
-  baseURL: "https://bloghaven-nxkx.onrender.com/api",
+  baseURL: 'https://bloghaven-nxkx.onrender.com/api', // Remove process.env part temporarily
   headers: {
     'Content-Type': 'application/json',
   },
