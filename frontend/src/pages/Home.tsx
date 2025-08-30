@@ -52,9 +52,9 @@ const Home: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen relative bg-gradient-to-br from-primary-50 via-primary-100 to-primary-200 bg-[length:200%_200%] animate-gradient-x">
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary-700 via-primary-600 to-primary-800 bg-[length:200%_200%] animate-gradient-x opacity-10" />
+    <div className="min-h-screen bg-white">
+      <section className="relative overflow-hidden bg-gradient-to-br from-primary-50 via-primary-100 to-primary-200 bg-[length:200%_200%] animate-gradient-x">
+        {/* Decorative overlay removed to keep hero clean on white background */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center">
             <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
@@ -65,7 +65,7 @@ const Home: React.FC = () => {
               Discover the latest insights in technology, programming, and innovation. 
               Share your knowledge with the developer community.
             </p>
-            <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
+            <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8 pb-8">
               <div className="rounded-md shadow-lg transform hover:scale-[1.02] transition-transform">
                 <Link
                   to="/explore"
