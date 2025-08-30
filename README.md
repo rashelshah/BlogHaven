@@ -1,4 +1,4 @@
-# Devnovate Blog Platform
+# BlogHaven Platform
 
 A full-stack blogging platform built with the MERN stack (MongoDB, Express.js, React, Node.js).
 
