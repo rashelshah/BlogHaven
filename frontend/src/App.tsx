@@ -21,6 +21,14 @@ import AdminBlogs from './pages/admin/AdminBlogs';
 import AdminUsers from './pages/admin/AdminUsers';
 
 function App() {
+  console.log("=== DEBUG INFO ===");
+  console.log("NODE_ENV:", process.env.NODE_ENV);
+  console.log("REACT_APP_API_URL:", process.env.REACT_APP_API_URL);
+  console.log("All env vars:", Object.keys(process.env).filter(key => key.startsWith('REACT_APP')));
+  console.log("Hard-coded URL test:", 'https://bloghaven-nxkx.onrender.com/api');
+  console.log("=== END DEBUG ===");
+  
+
   console.log("API URL =>", process.env.REACT_APP_API_URL);
   return (
     <AuthProvider>
