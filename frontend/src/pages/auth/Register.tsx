@@ -39,7 +39,7 @@ const Register: React.FC = () => {
       return false;
     }
     if (!isValidPassword(formData.password)) {
-      setError('Password must be at least 6 characters long');
+      setError('Password must be at least 6 characters, include one uppercase letter and one special character');
       return false;
     }
     if (formData.password !== formData.confirmPassword) {
@@ -162,7 +162,7 @@ const Register: React.FC = () => {
                   )}
                 </button>
               </div>
-              <p className="mt-1 text-xs text-gray-500">Must be at least 6 characters long</p>
+              <p className="mt-1 text-xs text-gray-500">Must be at least 6 characters, include one uppercase letter and one special character</p>
             </div>
             
             <div>

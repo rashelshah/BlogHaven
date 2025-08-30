@@ -34,7 +34,9 @@ export const isValidEmail = (email: string) => {
 };
 
 export const isValidPassword = (password: string) => {
-  return password.length >= 6;
+  // Min 6 chars, at least one uppercase letter and one special character
+  const regex = /^(?=.*[A-Z])(?=.*[^A-Za-z0-9]).{6,}$/;
+  return regex.test(password);
 };
 
 // Image utilities
