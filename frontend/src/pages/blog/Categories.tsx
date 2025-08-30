@@ -61,7 +61,7 @@ const Categories: React.FC = () => {
               <button
                 key={c._id}
                 onClick={() => navigate(`/explore?category=${encodeURIComponent(c._id)}`)}
-                className="bg-white border border-gray-200 rounded-lg p-6 text-left hover:shadow transition-shadow"
+                className="bg-white border border-gray-200 rounded-lg p-6 text-left hover:shadow-lg transition-all hover:-translate-y-0.5"
                 title={`View ${c._id} blogs`}
               >
                 <div className="text-lg font-semibold text-gray-900">{c._id}</div>

@@ -55,8 +55,8 @@ const Header: React.FC = () => {
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">D</span>
+              <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-gradient-to-tr from-primary-600 via-primary-500 to-primary-700 bg-[length:200%_200%] animate-gradient-x">
+                <span className="text-white font-bold text-lg">B</span>
               </div>
               <span className="font-bold text-xl text-gray-900">BlogHaven</span>
             </Link>

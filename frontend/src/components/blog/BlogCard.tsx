@@ -24,13 +24,13 @@ const BlogCard: React.FC<BlogCardProps> = ({
   const imageUrl = getImageUrl(blog.featuredImage);
 
   return (
-    <article className={`bg-white rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200 ${className}`}>
+    <article className={`bg-white rounded-lg shadow-sm border border-gray-200 hover:shadow-lg transition-all duration-200 ${className}`}>
       {imageUrl && (
         <div className="aspect-video w-full overflow-hidden rounded-t-lg">
           <img
             src={imageUrl}
             alt={blog.title}
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-200"
+            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
           />
         </div>
       )}
@@ -50,7 +50,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
 
         <Link to={`/blog/${blog.slug}`}>
           <h3 className="text-xl font-semibold text-gray-900 mb-2 hover:text-primary-600 transition-colors line-clamp-2">
-            {blog.title}
+            <span className="inline-block transform hover:translate-x-0.5 transition-transform">{blog.title}</span>
           </h3>
         </Link>
 

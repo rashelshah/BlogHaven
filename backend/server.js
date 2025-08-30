@@ -30,12 +30,12 @@ app.use(helmet({
 }));
 
 // Rate limiting
-const limiter = rateLimit({
+/*const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
   max: 100, // limit each IP to 100 requests per windowMs
   message: 'Too many requests from this IP, please try again later.'
 });
-app.use('/api/', limiter);
+app.use('/api/', limiter);*/
 
 // Stricter rate limiting for auth routes (disabled for development)
 // const authLimiter = rateLimit({
